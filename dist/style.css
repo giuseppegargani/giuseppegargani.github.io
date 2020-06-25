@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Permanent+Marker&display=swap');
+
+body {
+  background-image: url("https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg");
+} /*background image*/
+
+.caratteri{
+  font-family: 'Fredericka the Great', cursive;
+} /*caratteri generici*/
+
+.scheda{
+  height:300px;
+  width:30%;
+  font-size:30px;
+  margin-left:70px;
+  margin-top:20px;
+  margin-bottom: 0px;
+  font-family: 'Fredericka the Great', cursive;
+  left:0px;
+  width:1000px;
+  box-shadow: 25px 25px 25px rgba(0,0,0,0.19), 
+    16px 16px 15px rgba(0,0,0,0.23);
+  background-color:rgba(255,218,185,0.19);
+  /*background: linear-gradient(180deg, rgba(42, 245, 152,0.99), rga(0, 158, 253,0.99) 100%);*/
+  
+  animation-name: entrata;
+  animation-duration: 2s;
+  border-radius:15px;
+}
+
+#immagine1 {
+  margin:20px;
+  border-radius: 50%;
+  opacity:1;
+  width:150px;
+  height:150px;
+  box-shadow: 25px 25px 25px rgba(0,0,0,0.19), 
+    16px 16px 15px rgba(0,0,0,0.23);
+}
+
+@keyframes entrata {
+    0% {
+      left:700px;
+      opacity:0;
+    }
+    100% {
+      left: 0px;
+      opacity:1;
+    }
+  }
+#format {
+    color: #ffd740;
+    opacity: 0.5;
+    text-shadow: 10px 10px 10px green;
+    font-size: 20px;
+}
+#badge{
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.2) 49%, rgba(0,0,0,0.15) 51%, rgba(0,0,0,0.05));
+    background-repeat: repeat-x;
+  opacity:0.75;
+}
+
+#quotazione{
+  margin-top:25px;
+  margin-left:40px;
+  /*text-shadow: 25px 25px 20px rgba(0,0,0,0.99), */
+}
+.scritte{
+  margin-top:50px;
+  font-size:50px;
+  text-shadow: 15px 15px 2px rgba(0,0,0,0.19), 
+    16px 16px 15px rgba(0,0,0,0.23);
+}
+#badge{
+  box-shadow:25px 25px 20px rgba(0,0,0,0.19), 
+    16px 16px 15px rgba(0,0,0,0.23);
+}
+#dentro{
+  background: -webkit-linear-gradient(270deg, #C6FFDD, #FBD786, #f7797d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity:1;
+}
+#quotazione {
+  height:100px;
+}
+#testoQuote{
+  font-size: 50px;
+  text-shadow: 15px 15px 2px rgba(0,0,0,0.19), 
+    16px 16px 15px rgba(0,0,0,0.23);
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 26px;
+    font-weight: 600;
+    color: peachpuff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    opacity:0.5;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}

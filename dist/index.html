@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FinaleDinamicaFiltrataOttimizzataFlussoBootstrapMaterialDesign</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <!--NAVBAR-->
+<nav class="navbar navbar-expand-lg navbar-dark mb-4">
+                    <a class="navbar-brand" href="#" id="dati">Utente</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Azioni 
+                                    </a>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#" onclick="login()">Login</a>
+                                    <a class="dropdown-item" href="#" onclick="logout()">Logout</a>
+                                    <a class="dropdown-item" href="#" onclick="classifica()">Classifica</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Email" aria-label="Email" id="email">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Password" aria-label="Password" id="password">
+                        </form>
+                    </div>
+                </nav>
+  
+  <!--Foto principale pagina-->
+ <div class="container-fluid">
+    <div id="schedin" class="row">
+      <div class="column">
+        <img style="height:200px;" id="immagineSchedina" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Placeholder_couple_superhero.png">
+      </div>
+      <div class="column" style="margin-left:100px;font-size:40px;">
+        <div class="row"><p class="caratteri" >Likes:<span id="likes">25</span></p></div>
+        <div class="row">
+          <button class="btn-hover color-1 caratteri" onclick="AumentaLikes()">Aumenta</button>
+          <button class="btn-hover color-1 caratteri" onclick="DiminuisciLikes()">Diminuisci</button>
+        </div>
+      </div>
+    </div> 
+</div>
+  
+  <!--Schedina classifica originariamente nascosta e che clona e modifica da funzione-->
+<div id="giocatori" class="schedine">
+  <ul id="players" class="container-fluid"></ul>
+  
+    <div class="card scheda" hidden="true"  id="schedina" style="box-shadow: 25px 25px 25px rgba(0,0,0,0.19), 16px 16px 15px rgba(0,0,0,0.23);">
+      <div class="row">
+      <div class="view col" id="tondino">
+        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img (120).jpg" alt="" id="immagine1" style="display:inline;"> 
+    </div> 
+        <div class="col"><p id="nomeSchedina" class="scritte">Cavolino</p></div>
+        <div class="col scritte">
+          <span class="peach color-block badge badge-pill " id="badge">
+          <i class="fa fa-gratipay fa-2x" id="dentro">
+            <span id="numLikes">75</span>
+          </i>
+          </span>
+        </div>
+      </div>
+      <div class="row fa fa-quote-left fa-2x" id="quotazione"><span class="caratteri" id="testoQuote">Questo è il mio mondo e questo quello di un altro</span></div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.6/firebase.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
